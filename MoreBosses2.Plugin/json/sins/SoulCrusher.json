@@ -8,10 +8,13 @@
         "english": "Soul Crusher"
       },
       "descriptions": {
-        "english": "Arkion applies [dazed] to your units on [slay]."
+        "english": "Arkion applies [dazed] [effect0.power] to your units on [slay]."
       },
       "icon": "@ArkionSoulCrusherSinIcon",
-      "icon_small": "@ArkionSoulCrusherSinIconSmall"
+      "icon_small": "@ArkionSoulCrusherSinIconSmall",
+      "relic_effects": [
+        "@NoopIntPlaceholder"
+      ]
     },
     {
       "id": "ArkionSlayDaze2",
@@ -20,16 +23,22 @@
         "english": "Soul Crusher II"
       },
       "descriptions": {
-        "english": "Arkion applies [dazed] to your units on [slay]. Arkion has +[effect0.power][attack]."
+        "english": "Arkion applies [dazed] [effect0.power] to your units on [slay]. Arkion has +[effect1.power][attack]."
       },
       "icon": "@ArkionSoulCrusherSinIcon",
       "icon_small": "@ArkionSoulCrusherSinIconSmall",
       "relic_effects": [
+        "@NoopIntPlaceholder",
         "@ArkionAttackUp"
       ]
     }
   ],
   "relic_effects": [
+    {
+      "id": "NoopIntPlaceholder",
+      "name": "RelicEffectNull",
+      "param_int": 1
+    },
     {
       "id": "ArkionAttackUp",
       "name": "RelicEffectModifyCharacterAttackDamage",

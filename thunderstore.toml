@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 namespace = "Conductor"
 name = "MoreBosses-Reloaded"
 versionNumber = "0.0.1"
-description = "Mod with new flying boss variant"
+description = "Mod with new Boss variants"
 websiteUrl = "https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded"
 containsNsfwContent = false
 

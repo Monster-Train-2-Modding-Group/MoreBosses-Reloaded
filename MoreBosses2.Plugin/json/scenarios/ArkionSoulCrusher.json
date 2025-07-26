@@ -54,16 +54,16 @@
                   },
                   {
                     "character": "ClericT1_OminousAcolyte",
-                    "requiredCovenant": 2
+                    "required_covenant": 2
                   },
                   {
                     "character": "HeavyT1_Basic",
-                    "requiredCovenant": 10,
+                    "required_covenant": 10,
                     "suppress_spawn": true
                   },
                   {
                     "character": "@HeavyT1_Basic_Chosen",
-                    "requiredCovenant": 10
+                    "required_covenant": 10
                   }
                 ]
               }
@@ -75,7 +75,7 @@
                 "spawn_list": [
                   {
                     "character": "ClericT1_OminousAcolyte",
-                    "requiredCovenant": 2
+                    "required_covenant": 2
                   },
                   {
                     "character": "HeavyT1_Basic"
@@ -113,12 +113,12 @@
                   },
                   {
                     "character": "HeavyT1_Basic",
-                    "requiredCovenant": 10,
+                    "required_covenant": 10,
                     "suppress_spawn": true
                   },
                   {
                     "character": "@HeavyT1_Basic_Chosen",
-                    "requiredCovenant": 10
+                    "required_covenant": 10
                   }
                 ]
               }
@@ -130,7 +130,7 @@
                 "spawn_list": [
                   {
                     "character": "ShieldGuardT1_BasicNonAttack",
-                    "requiredCovenant": 2
+                    "required_covenant": 2
                   }
                 ]
               }
