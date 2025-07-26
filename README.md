@@ -1,7 +1,7 @@
 # More Bosses Reloaded
 A Mod featuring more flying boss variants for Monster Train 2
 
-![icon](https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Balance-Configurator/main/icon.png)
+![icon](https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/main/icon.png)
 
 ## Screenshots
 
