@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - MoreBosses2.Plugin/json/**
+      - MoreBosses-Reloaded.Plugin/json/**
   pull_request:
     branches:
       - main
     paths:
-      - MoreBosses2.Plugin/json/**
+      - MoreBosses-Reloaded.Plugin/json/**
 
 jobs:
   validate:
@@ -24,4 +24,4 @@ jobs:
       run: pip install check-jsonschema
 
     - name: Validate JSON Schema
-      run: check-jsonschema MoreBosses2.Plugin/json/**/*.json --schemafile=https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json --verbose
+      run: check-jsonschema MoreBosses-Reloaded.Plugin/json/**/*.json --schemafile=https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json --verbose

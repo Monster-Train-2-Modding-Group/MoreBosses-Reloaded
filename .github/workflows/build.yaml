@@ -14,8 +14,8 @@ permissions:
 env:
   base_version: '0.1.0'
   mod_namespace: 'Conductor'
-  mod_name: 'MoreBosses2'
-  release_name: 'MoreBosses2.Plugin'
+  mod_name: 'MoreBosses-Reloaded'
+  release_name: 'MoreBosses-Reloaded.Plugin'
 
 jobs:
   build:
