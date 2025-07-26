@@ -1,0 +1,174 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "scenarios": [
+    {
+      "id": "ArkionSoulCrusher",
+      "battle_track_name": "BattleMusic_Arkios",
+      "boss_icon": "@ArkionSoulCrusherBattleIcon",
+      "boss_spawn_sfx_cue": "Arkion_Intro",
+      "difficulty": "boss",
+      "distance": 2,
+      "run_type": "primary",
+      "names": {
+        "english": "Arkion, Scion of Savagery"
+      },
+      "descriptions": {
+        "english": "Arkion seeks to demoralize your units with soul crushing blows that leave units on the floor stunned."
+      },
+      "enemy_blessings": [
+        "@ArkionSlayDaze"
+      ],
+      "titan_trial": "@ArkionSlayDaze2",
+      "prefab": "@ArkionMapIcon",
+      "spawn_pattern": {
+        "boss_type": "outer_train_boss",
+        "boss_character": "@Boss_Level3_Arkion_SlayDaze",
+        "hard_boss_character": "@Boss_Level3_Arkion_SlayDaze",
+        "spawn_group_waves": [
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "HordeT1_Forsaken"
+                  },
+                  {
+                    "character": "HordeT1_Forsaken"
+                  },
+                  {
+                    "character": "HordeT1_Forsaken"
+                  },
+                  {
+                    "character": "HordeT1_Forsaken"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "MageT1_Junker"
+                  },
+                  {
+                    "character": "ClericT1_OminousAcolyte",
+                    "requiredCovenant": 2
+                  },
+                  {
+                    "character": "HeavyT1_Basic",
+                    "requiredCovenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "@HeavyT1_Basic_Chosen",
+                    "requiredCovenant": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "ClericT1_OminousAcolyte",
+                    "requiredCovenant": 2
+                  },
+                  {
+                    "character": "HeavyT1_Basic"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "MageT1_Junker"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  },
+                  {
+                    "character": "ShieldGuardT1_BasicNonAttack"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "ClericT1_OminousAcolyte"
+                  },
+                  {
+                    "character": "HeavyT1_Basic",
+                    "requiredCovenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "@HeavyT1_Basic_Chosen",
+                    "requiredCovenant": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "ShieldGuardT1_BasicNonAttack",
+                    "requiredCovenant": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "ArkionMapIcon",
+      "type": "battle_node_icon",
+      "extensions": {
+        "battle_node_icon": {
+          "completed_sprite": "@ArkionCompleted",
+          "active_sprite": "@ArkionSoulCrusherActive",
+          "inactive_sprite": "@ArkionSoulCrusherInactive"
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ArkionSoulCrusherBattleIcon",
+      "path": "textures/ArkionSoulCrusherIcon.png"
+    },
+    {
+      "id": "ArkionCompleted",
+      "path": "textures/ArkionCompleted.png"
+    },
+    {
+      "id": "ArkionSoulCrusherActive",
+      "path": "textures/ArkionSoulCrusherActive.png"
+    },
+    {
+      "id": "ArkionSoulCrusherInactive",
+      "path": "textures/ArkionSoulCrusherInactive.png"
+    }
+  ]
+}

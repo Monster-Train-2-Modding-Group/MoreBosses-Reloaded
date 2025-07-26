@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "ArkionSlayDaze",
+      "type": "sin",
+      "names": {
+        "english": "Soul Crusher"
+      },
+      "descriptions": {
+        "english": "Arkion applies [dazed] to your units on [slay]."
+      },
+      "icon": "@ArkionSoulCrusherSinIcon",
+      "icon_small": "@ArkionSoulCrusherSinIconSmall"
+    },
+    {
+      "id": "ArkionSlayDaze2",
+      "type": "sin",
+      "names": {
+        "english": "Soul Crusher II"
+      },
+      "descriptions": {
+        "english": "Arkion applies [dazed] to your units on [slay]. Arkion has +[effect0.power][attack]."
+      },
+      "icon": "@ArkionSoulCrusherSinIcon",
+      "icon_small": "@ArkionSoulCrusherSinIconSmall",
+      "relic_effects": [
+        "@ArkionAttackUp"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ArkionAttackUp",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "source_team": "heroes",
+      "param_int": 6,
+      "param_trigger": "on_spawn",
+      "param_subtype": "SubtypesData_BigBossT1_50952308-e0f3-4acb-b0cc-e0d662b868b8",
+      "param_card_type": "invalid"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ArkionSoulCrusherSinIcon",
+      "path": "textures/SIN_Boss_Level3Rage_Titan.png"
+    },
+    {
+      "id": "ArkionSoulCrusherSinIconSmall",
+      "path": "textures/SIN_Boss_Level3Rage_Titan_HUD.png"
+    }
+  ]
+}

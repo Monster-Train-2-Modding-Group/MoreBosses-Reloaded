@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "characters": [
+    {
+      "id": "HeavyT1_Basic_Chosen",
+      "override": "replace",
+      "clone_id": "HeavyT1_Basic",
+      "names": {
+        "english": "Chosen Champion"
+      },
+      "health": 45,
+      "chosen_variant": true,
+      "triggers": [
+        "@HeavyT1_Basic_Chosen_Rage_EndOfCombat"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "HeavyT1_Basic_Chosen_Rage_EndOfCombat",
+      "trigger": "post_combat",
+      "descriptions": {
+        "english": "Gain [rage] [effect0.status0.power]."
+      },
+      "effects": [
+        "@HeavyT1_Basic_Chosen_GainRage"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "HeavyT1_Basic_Chosen_GainRage",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 3
+        }
+      ]
+    }
+  ]
+}

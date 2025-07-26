@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "characters": [
+    {
+      "id": "Boss_Level3_Arkion_SlayDaze",
+      "override": "replace",
+      "clone_id": "Boss_Level3_Arkion_PushAttack",
+      "attack_damage": 9,
+      "triggers": ["@SlayDaze"],
+      "enemy_relic": "@ArkionSlayDaze"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "SlayDaze",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Apply [dazed] [effect0.status0.power] to your units."
+      },
+      "remove_on_relentless_change": true,
+      "effects": [
+        "@DazeAll"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "DazeAll",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "dazed",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
