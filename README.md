@@ -3,6 +3,11 @@ A Mod featuring more flying boss variants for Monster Train 2
 
 ![icon](https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/main/icon.png)
 
+## Current Variants
+
+We currently have 1 new boss variant:
+* [Arkion Variant (Soul Crusher)](https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/wiki/Arkion-Soul-Crusher)
+
 ## Screenshots
 
 ![map](https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/main/screenshots/battle_node_and_sin.jpg)
@@ -17,7 +22,5 @@ A Mod featuring more flying boss variants for Monster Train 2
 ![intro2](https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/main/screenshots/battle_with_enemy.jpg)
 <sub>New Chosen enemy variants with their own effects.</sub>
 
-Currently contains 1 new bosses:
-* [Arkion Variant (Soul Crusher)](https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/wiki/Arkion-Soul-Crusher)
 
 New Boss Variants coming soon!
