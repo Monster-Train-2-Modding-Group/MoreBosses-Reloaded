@@ -61,7 +61,7 @@ namespace MoreBosses2.Plugin
     public class Plugin : BaseUnityPlugin
     {
         internal static new ManualLogSource Logger = new(MyPluginInfo.PLUGIN_GUID);
-        ConfigEntry<bool>? arkionSoulCrusher;
+        ConfigEntry<bool>? ArkionSoulCrusher;
         public List<ScenarioSet> Scenarios = [];
 
         public void Awake()
@@ -87,7 +87,7 @@ namespace MoreBosses2.Plugin
 
         public void GatherConfig()
         {
-            arkionSoulCrusher = Config.Bind<bool>("Scenarios", "Enable Arkion Soul Crusher", true,
+            ArkionSoulCrusher = Config.Bind<bool>("Scenarios", "Enable Arkion Soul Crusher", true,
                 new ConfigDescriptionBuilder
                 {
                     English = "Enable Arkion Soul Crusher Scenario (Slay: Apply Dazed 1 to your units).",
@@ -96,7 +96,7 @@ namespace MoreBosses2.Plugin
 
         public void GatherScenarios()
         {
-            if (arkionSoulCrusher!.Value)
+            if (ArkionSoulCrusher!.Value)
             {
                 Scenarios.Add(new ScenarioSet
                 {
