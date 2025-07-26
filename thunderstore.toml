@@ -3,7 +3,7 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "Conductor"
-name = "MoreBosses-Reloaded"
+name = "MoreBosses_Reloaded"
 versionNumber = "0.1.0"
 description = "Mod with new Boss variants"
 websiteUrl = "https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded"
