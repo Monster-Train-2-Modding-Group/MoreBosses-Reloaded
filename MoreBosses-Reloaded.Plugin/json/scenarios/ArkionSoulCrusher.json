@@ -10,10 +10,20 @@
       "distance": 2,
       "run_type": "primary",
       "names": {
-        "english": "Arkion, Scion of Savagery"
+        "english": "Arkion, Scion of Savagery",
+        "french": "Arkion, Héritier de Sauvagerie",
+        "german": "Arkion, Grausamkeits Spross",
+        "russian": "Аркион Наследник Изувера",
+        "portuguese": "Arkion, Descendente da Barbárie",
+        "chinese": "阿尔基翁，野蛮泰坦的后裔",
+        "spanish": "Arkion, Vástago de Salvajismo",
+        "chinese_traditional": "『野性之子』阿爾基昂",
+        "korean": "세비저리의 후손, 아키온",
+        "japanese": "サベジャリーの嗣子、アーキオン"
       },
       "descriptions": {
-        "english": "Arkion seeks to demoralize your units with soul crushing blows that leave units on the floor stunned."
+        "english": "Arkion seeks to demoralize your units with soul crushing blows that leave units on the floor stunned.",
+        "chinese": "阿尔基翁使用强力的攻击挫败你单位的士气，能使你的单位眩晕。"
       },
       "enemy_blessings": [
         "@ArkionSlayDaze"
