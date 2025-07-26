@@ -5,7 +5,7 @@ using System.Text;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 
-namespace MoreBosses2.Plugin
+namespace MoreBossesReloaded.Plugin
 {
     public struct ScenarioSet
     {
