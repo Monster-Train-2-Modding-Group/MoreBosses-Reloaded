@@ -9,7 +9,7 @@
 ## 目前已做的形态
 
 我们目前做了 1 个新的首领形态：
-* [阿尔基翁（灵魂粉碎者）](https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/wiki/Arkion-Soul-Crusher)
+* [阿尔基翁（灵魂粉碎者）](https://github.com/lostone-zc/MoreBosses-Reloaded-Chinese/wiki/Arkion-Soul-Crusher)
 
 ## 实机截图
 
