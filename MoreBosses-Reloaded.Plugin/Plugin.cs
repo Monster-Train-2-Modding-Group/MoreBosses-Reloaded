@@ -91,6 +91,7 @@ namespace MoreBossesReloaded.Plugin
                 new ConfigDescriptionBuilder
                 {
                     English = "Enable Arkion Soul Crusher Scenario (Slay: Apply Dazed 1 to your units).",
+                    Chinese = "启用阿尔基翁的灵魂粉碎者形态（杀戮时对你的单位施加眩晕 1）。",
                 }.ToString());
         }
 

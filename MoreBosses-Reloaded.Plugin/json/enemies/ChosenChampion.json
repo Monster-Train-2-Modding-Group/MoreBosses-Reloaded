@@ -6,7 +6,8 @@
       "override": "replace",
       "clone_id": "HeavyT1_Basic",
       "names": {
-        "english": "Chosen Champion"
+        "english": "Chosen Champion",
+        "chinese": "神选勇者"
       },
       "health": 45,
       "chosen_variant": true,
@@ -20,7 +21,8 @@
       "id": "HeavyT1_Basic_Chosen_Rage_EndOfCombat",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Gain [rage] [effect0.status0.power]."
+        "english": "Gain [rage] [effect0.status0.power].",
+        "chinese": "获得[rage] [effect0.status0.power]。"
       },
       "effects": [
         "@HeavyT1_Basic_Chosen_GainRage"

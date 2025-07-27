@@ -5,10 +5,12 @@
       "id": "ArkionSlayDaze",
       "type": "sin",
       "names": {
-        "english": "Soul Crusher"
+        "english": "Soul Crusher",
+        "chinese": "灵魂粉碎者"
       },
       "descriptions": {
-        "english": "Arkion applies [dazed] [effect0.power] to your units on [slay]."
+        "english": "Arkion applies [dazed] [effect0.power] to your units on [slay].",
+        "chinese": "阿尔基翁在[slay]时对你的单位施加[dazed] [effect0.power]。"
       },
       "icon": "@ArkionSoulCrusherSinIcon",
       "icon_small": "@ArkionSoulCrusherSinIconSmall",
@@ -20,10 +22,12 @@
       "id": "ArkionSlayDaze2",
       "type": "sin",
       "names": {
-        "english": "Soul Crusher II"
+        "english": "Soul Crusher II",
+        "chinese": "灵魂粉碎者 II"
       },
       "descriptions": {
-        "english": "Arkion applies [dazed] [effect0.power] to your units on [slay]. Arkion has +[effect1.power][attack]."
+        "english": "Arkion applies [dazed] [effect0.power] to your units on [slay]. Arkion has +[effect1.power][attack].",
+        "chinese": "阿尔基翁在[slay]时对你的单位施加[dazed] [effect0.power]。阿尔基翁拥有 +[effect1.power][attack]。"
       },
       "icon": "@ArkionSoulCrusherSinIcon",
       "icon_small": "@ArkionSoulCrusherSinIconSmall",

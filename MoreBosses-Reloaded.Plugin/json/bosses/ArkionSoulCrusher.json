@@ -15,7 +15,14 @@
       "id": "SlayDaze",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Apply [dazed] [effect0.status0.power] to your units."
+        "english": "Apply [dazed] [effect0.status0.power] to your units.",
+        "french": "Inflige <b>Étourdi</b> [effect0.status0.power] à vos unités.",
+        "german": "Wende [effect0.status0.power] <b>Schwindel</b> auf deine Einheiten an.",
+        "russian": "Накладывает на ваших существ [effect0.status0.power] ед. <b>ошеломления</b>.",
+        "portuguese": "Concede [effect0.status0.power] de <b>Atordoamento</b> às suas unidades.",
+        "chinese": "对本层你的单位施加[dazed] [effect0.status0.power]。",
+        "chinese_traditional": "對你的單位施加[dazed] [effect0.status0.power]。",
+        "korean": "당신의 유닛들에게 [dazed] [effect0.status0.power] $을$ 부여합니다."
       },
       "remove_on_relentless_change": true,
       "effects": [
