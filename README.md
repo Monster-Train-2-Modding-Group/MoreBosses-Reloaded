@@ -8,8 +8,10 @@ A Mod featuring more flying boss variants for Monster Train 2
 
 ## Current Variants
 
-We currently have 1 new boss variant:
+We currently have 2 new boss variants:
+
 * [Arkion Variant (Soul Crusher)](https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/wiki/Arkion-Soul-Crusher)
+* [Cael Variant (Forbidden Harvest)](https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/wiki/Cael-Forbidden-Harvest)
 
 ## Screenshots
 
@@ -24,6 +26,5 @@ We currently have 1 new boss variant:
 
 ![intro2](https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/main/screenshots/battle_with_enemy.jpg)
 <sub>New Chosen enemy variants with their own effects.</sub>
-
 
 New Boss Variants coming soon!
