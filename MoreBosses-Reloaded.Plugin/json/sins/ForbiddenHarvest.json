@@ -9,7 +9,7 @@
         "chinese": ""
       },
       "descriptions": {
-        "english": "Cherubs grant +[effect0.power][attack] to the enter and non-boss eaters gain [multistrike] [effect0.secondarypower].",
+        "english": "Cherubs grant +[effect0.power][attack] to the eater and non-boss eaters gain [multistrike] [effect0.secondarypower].",
         "chinese": ""
       },
       "icon": "@CaelForbiddenHarvestSinIcon",
@@ -26,7 +26,7 @@
         "chinese": ""
       },
       "descriptions": {
-        "english": "Cherubs grant +[effect0.power][attack] to the enter and non-boss eaters gain [multistrike] [effect0.secondarypower].",
+        "english": "Cherubs grant +[effect0.power][attack] to the eater and non-boss eaters gain [multistrike] [effect0.secondarypower].",
         "chinese": ""
       },
       "icon": "@CaelForbiddenHarvestSinIcon",
