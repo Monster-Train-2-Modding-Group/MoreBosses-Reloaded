@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.deref.json",
+  "characters": [
+    {
+      "id": "Boss_Level6_Cael_ForbiddenHarvest",
+      "override": "replace",
+      "clone_id": "Boss_Level6_Cael_Lifesteal",
+      "triggers": ["@CaelResolveBuffCherubsUnits"],
+      "enemy_relic": "@CaelForbiddenHarvest"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "CaelResolveBuffCherubsUnits",
+      "trigger": "post_combat",
+      "descriptions": {
+        "english": "Apply <b>Buffet</b> [effect0.upgrade.status0.power], [multistrike] [effect0.upgrade.status1.power], and fully heal all <b>Cherubs</b>.<br>Apply [rage] [effect3.upgrade.status0.power] to enemy units, if there are no <b>Cherubs</b> in the room.",
+        "chinese": ""
+      },
+      "remove_on_relentless_change": true,
+      "effects": [
+        "@UpgradeCherubs",
+        "@HealCherubs",
+        "@SkipIfThereAreAnyCherubs",
+        "@EveryoneGainsRage"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UpgradeCherubs",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "target_subtype": "SubtypesData_Snack",
+      "param_upgrade": "@CaelForbiddenCherubUpgrade"
+    },
+    {
+      "id": "HealCherubs",
+      "name": "CardEffectHeal",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "target_subtype": "SubtypesData_Snack",
+      "param_int": 9999
+    },
+    {
+      "id": "SkipIfThereAreAnyCherubs",
+      "name": {
+        "id": "@CardEffectExcludeCharacterSubtype",
+        "mod_reference": "Conductor"
+      },
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_subtype": "SubtypesData_Snack",
+      "should_cancel_subsequent_effects_if_test_fails": true
+    },
+    {
+      "id": "EveryoneGainsRage",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_upgrade": "@CaelRageUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "CaelForbiddenCherubUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        },
+        {
+          "status": "eatmany",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "CaelRageUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "buff",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

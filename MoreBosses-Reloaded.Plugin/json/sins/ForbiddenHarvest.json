@@ -1,0 +1,149 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.deref.json",
+  "relics": [
+    {
+      "id": "CaelForbiddenHarvest",
+      "type": "sin",
+      "names": {
+        "english": "Forbidden Harvest",
+        "chinese": ""
+      },
+      "descriptions": {
+        "english": "Cherubs grant +[effect0.power][attack] to the enter and non-boss eaters gain [multistrike] [effect0.secondarypower].",
+        "chinese": ""
+      },
+      "icon": "@CaelForbiddenHarvestSinIcon",
+      "icon_small": "@CaelForbiddenHarvestSinIconSmall",
+      "relic_effects": [
+        "@ForbiddenCherubEatenTriggerI"
+      ]
+    },
+    {
+      "id": "CaelForbiddenHarvestII",
+      "type": "sin",
+      "names": {
+        "english": "Forbidden Harvest II",
+        "chinese": ""
+      },
+      "descriptions": {
+        "english": "Cherubs grant +[effect0.power][attack] to the enter and non-boss eaters gain [multistrike] [effect0.secondarypower].",
+        "chinese": ""
+      },
+      "icon": "@CaelForbiddenHarvestSinIcon",
+      "icon_small": "@CaelForbiddenHarvestSinIconSmall",
+      "relic_effects": [
+        "@ForbiddenCherubEatenTriggerII"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ForbiddenCherubEatenTriggerI",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [ "@ForbiddenCherubEaterGainsMultistrikeAndAttackI" ],
+      "param_characters": [
+        "@ForbiddenCherub"
+      ],
+      "param_int": 2,
+      "param_int_2": 1
+    },
+    {
+      "id": "ForbiddenCherubEatenTriggerII",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [ "@ForbiddenCherubEaterGainsMultistrikeAndAttackII" ],
+      "param_characters": [
+        "@ForbiddenCherub"
+      ],
+      "param_int": 5,
+      "param_int_2": 1
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ForbiddenCherubEaterGainsMultistrikeAndAttackI",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Grant +[effect0.upgrade.bonusdamage][attack] to the eater.[halfbreak]A non-boss eater also gains [multistrike] [effect1.upgrade.status0.power].[halfbreak]Deal [effect2.power] damage to self.",
+        "chinese": ""
+      },
+      "effects": [
+        "@ForbiddenCherubEaterGainsUpgradeI",
+        "@ForbiddenCherubEaterGainsMultistrike",
+        "@ForbiddenCherubDamageSelf"
+      ]
+    },
+    {
+      "id": "ForbiddenCherubEaterGainsMultistrikeAndAttackII",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Grant +[effect0.upgrade.bonusdamage][attack] to the eater.[halfbreak]A non-boss eater also gains [multistrike] [effect1.upgrade.status0.power].[halfbreak]Deal [effect2.power] damage to self.",
+        "chinese": ""
+      },
+      "effects": [
+        "@ForbiddenCherubEaterGainsUpgradeII",
+        "@ForbiddenCherubEaterGainsMultistrike",
+        "@ForbiddenCherubDamageSelf"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ForbiddenCherubEaterGainsUpgradeI",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "target_team": "heroes",
+      "param_upgrade": "@ForbiddenCherubUpgradeI"
+    },
+    {
+      "id": "ForbiddenCherubEaterGainsUpgradeII",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "target_team": "heroes",
+      "param_upgrade": "@ForbiddenCherubUpgradeII"
+    },
+    {
+      "id": "ForbiddenCherubEaterGainsMultistrike",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "target_team": "heroes",
+      "target_ignore_bosses": true,
+      "param_upgrade": "@ForbiddenCherubMultistrike"
+    },
+    {
+      "id": "ForbiddenCherubDamageSelf",
+      "name": "CardEffectDamage",
+      "target_mode": "self",
+      "target_team": "heroes",
+      "param_int": 20
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ForbiddenCherubUpgradeI",
+      "bonus_damage": 2
+    },
+    {
+      "id": "ForbiddenCherubUpgradeII",
+      "bonus_damage": 5
+    },
+    {
+      "id": "ForbiddenCherubMultistrike",
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CaelForbiddenHarvestSinIcon",
+      "path": "textures/SIN_Boss_Level6_Titan.png"
+    },
+    {
+      "id": "CaelForbiddenHarvestSinIconSmall",
+      "path": "textures/SIN_Boss_Level6_Titan_HUD.png"
+    }
+  ]
+}

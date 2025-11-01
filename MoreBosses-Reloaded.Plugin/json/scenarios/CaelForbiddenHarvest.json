@@ -1,0 +1,222 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.deref.json",
+  "scenarios": [
+    {
+      "id": "CaelForbiddenHarvest",
+      "battle_track_name": "BattleMusic_Cael",
+      "boss_icon": "@CaelForbiddenHarvestIcon",
+      "boss_spawn_sfx_cue": "Cael_Intro",
+      "difficulty": "boss",
+      "distance": 5,
+      "run_type": "primary",
+      "names": {
+        "english": "Cael, Lord of the Cherubs",
+        "chinese": ""
+      },
+      "descriptions": {
+        "english": "Heaven's leader of the Cherubs has been manipulated by the Titan of Dominion. Now even Heaven's workers are under the Titan's grasp.",
+        "chinese": ""
+      },
+      "enemy_blessings": [
+        "@CaelForbiddenHarvest"
+      ],
+      "titan_trial": "@CaelForbiddenHarvestII",
+      "prefab": "@CaelMapIcon",
+      "spawn_pattern": {
+        "boss_type": "outer_train_boss",
+        "boss_character": "@Boss_Level6_Cael_ForbiddenHarvest",
+        "hard_boss_character": "@Boss_Level6_Cael_ForbiddenHarvest",
+        "spawn_group_waves": [
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_Basic"
+                  },
+                  {
+                    "character": "@ForbiddenCherub"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_Basic"
+                  },
+                  {
+                    "character": "@ForbiddenCherub"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor",
+                    "required_covenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "@HeavyT2_Corruptor_Chosen",
+                    "required_covenant": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_Basic"
+                  },
+                  {
+                    "character": "@ForbiddenCherub"
+                  },
+                  {
+                    "character": "HeavyT2_Zealot"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_Basic"
+                  },
+                  {
+                    "character": "@ForbiddenCherub"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_Basic"
+                  },
+                  {
+                    "character": "@ForbiddenCherub"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor",
+                    "required_covenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "@HeavyT2_Corruptor_Chosen",
+                    "required_covenant": 10
+                  },
+                  {
+                    "character": "HeavyT2_Zealot"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_MalevolentHunter",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "AttackerT2_MalevolentHunter"
+                  },
+                  {
+                    "character": "@ForbiddenCherub"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_Basic"
+                  },
+                  {
+                    "character": "@ForbiddenCherub"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "@ForbiddenCherub"
+                  },
+                  {
+                    "character": "@ForbiddenCherub",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor",
+                    "required_covenant": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CaelMapIcon",
+      "type": "battle_node_icon",
+      "extensions": {
+        "battle_node_icon": {
+          "completed_sprite": "@CaelCompleted",
+          "active_sprite": "@CaelForbiddenHarvestActive",
+          "inactive_sprite": "@CaelForbiddenHarvestInactive"
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CaelForbiddenHarvestIcon",
+      "path": "textures/CaelForbiddenHarvestIcon.png"
+    },
+    {
+      "id": "CaelCompleted",
+      "path": "textures/CaelCompleted.png"
+    },
+    {
+      "id": "CaelForbiddenHarvestActive",
+      "path": "textures/CaelForbiddenHarvestActive.png"
+    },
+    {
+      "id": "CaelForbiddenHarvestInactive",
+      "path": "textures/CaelForbiddenHarvestInactive.png"
+    }
+  ]
+}

@@ -62,6 +62,7 @@ namespace MoreBossesReloaded.Plugin
     {
         internal static new ManualLogSource Logger = new(MyPluginInfo.PLUGIN_GUID);
         ConfigEntry<bool>? ArkionSoulCrusher;
+        ConfigEntry<bool>? CaelForbiddenHarvest;
         public List<ScenarioSet> Scenarios = [];
 
         public void Awake()
@@ -93,6 +94,13 @@ namespace MoreBossesReloaded.Plugin
                     English = "Enable Arkion Soul Crusher Scenario (Slay: Apply Dazed 1 to your units).",
                     Chinese = "启用阿尔基翁的灵魂粉碎者形态（杀戮时对你的单位施加眩晕 1）。",
                 }.ToString());
+
+            CaelForbiddenHarvest = Config.Bind<bool>("Scenarios", "Enable Cael Forbidden Harvest", true,
+                new ConfigDescriptionBuilder
+                {
+                    English = "Enable Cael Forbidden Harvest Scenario (Cherubs: Grant Multistrike 1).",
+                    Chinese = "",
+                }.ToString());
         }
 
         public void GatherScenarios()
@@ -107,6 +115,20 @@ namespace MoreBossesReloaded.Plugin
                         "json/enemies/ChosenChampion.json",
                     ],  
                     Sins = "json/sins/SoulCrusher.json"
+                });
+            }
+
+            if (CaelForbiddenHarvest!.Value)
+            {
+                Scenarios.Add(new ScenarioSet
+                {
+                    Scenario = "json/scenarios/CaelForbiddenHarvest.json",
+                    Boss = "json/bosses/CaelForbiddenHarvest.json",
+                    Enemies = [
+                        "json/enemies/ChosenGuardian.json",
+                        "json/enemies/ForbiddenCherub.json",
+                    ],
+                    Sins = "json/sins/ForbiddenHarvest.json"
                 });
             }
         }

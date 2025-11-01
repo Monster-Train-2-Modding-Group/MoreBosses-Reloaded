@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.deref.json",
+  "characters": [
+    {
+      "id": "ForbiddenCherub",
+      "override": "replace",
+      "clone_id": "Boss_Level6_FeedAtkHP",
+      "names": {
+        "english": "Forbidden Cherub"
+      },
+      "can_attack": true,
+      "attack_damage": 5,
+      "health": 40,
+      "starting_status_effects": [
+        {
+          "status": "eatmany",
+          "count": 2
+        }
+      ],
+      "triggers": [ "null" ],
+      "character_art": "@ForbiddenCherubGameObject"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "ForbiddenCherubGameObject",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@ForbiddenCherubSprite",
+          "skeleton_animations": [
+            {
+              "animation": "idle",
+              "skeleton": "@ForbiddenCherub_Idle"
+            },
+            {
+              "animation": "hit_react",
+              "skeleton": "@ForbiddenCherub_HitReact"
+            },
+            {
+              "animation": "attack",
+              "skeleton": "@ForbiddenCherub_Attack"
+            }
+          ],
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": -0.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ForbiddenCherubSprite",
+      "path": "textures/ENM_ForbiddenCherub.png"
+    }
+  ],
+  "skeletons": [
+    {
+      "id": "ForbiddenCherub_Idle",
+      "atlas_path": "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_Idle.atlas.txt",
+      "data_path": "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_Idle.json",
+      "texture_paths": [ "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_Idle.png" ]
+    },
+    {
+      "id": "ForbiddenCherub_HitReact",
+      "atlas_path": "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_HitReact.atlas.txt",
+      "data_path": "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_HitReact.json",
+      "texture_paths": [ "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_HitReact.png" ]
+    },
+    {
+      "id": "ForbiddenCherub_Attack",
+      "atlas_path": "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_Attack.atlas.txt",
+      "data_path": "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_Attack.json",
+      "texture_paths": [ "textures/skeletons/ForbiddenCherub/ENM_ForbiddenCherub_Attack.png" ]
+    }
+  ]
+}

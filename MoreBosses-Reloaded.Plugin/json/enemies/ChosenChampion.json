@@ -1,10 +1,10 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.deref.json",
   "characters": [
     {
       "id": "HeavyT1_Basic_Chosen",
-      "override": "replace",
       "clone_id": "HeavyT1_Basic",
+      "override": "replace",
       "names": {
         "english": "Chosen Champion",
         "chinese": "神选勇者"

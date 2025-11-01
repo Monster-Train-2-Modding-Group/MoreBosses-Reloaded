@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.deref.json",
+  "characters": [
+    {
+      "id": "HeavyT2_Corruptor_Chosen",
+      "clone_id": "HeavyT2_Corruptor",
+      "override": "replace",
+      "names": {
+        "english": "Chosen Guardian",
+        "chinese": ""
+      },
+      "attack_damage": 6,
+      "chosen_variant": true,
+      "triggers": [
+        "@HeavyT2_Corruptor_Chosen_Followup_MoreCorruption"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "HeavyT2_Corruptor_Chosen_Followup_MoreCorruption",
+      "trigger": {
+        "id": "@FollowUp",
+        "mod_reference": "Conductor"
+      },
+      "descriptions": {
+        "english": "Apply [corruption] [effect0.status0.power] to the damaged unit.",
+        "chinese": ""
+      },
+      "effects": [
+        "@HeavyT2_Corruptor_Chosen_MoreCorruption"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "HeavyT2_Corruptor_Chosen_MoreCorruption",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": {
+        "id": "@override_target_character",
+        "mod_reference": "Conductor"
+      },
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "corruption",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
