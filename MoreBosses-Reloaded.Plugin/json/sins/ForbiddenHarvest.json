@@ -6,11 +6,11 @@
       "type": "sin",
       "names": {
         "english": "Forbidden Harvest",
-        "chinese": ""
+        "chinese": "禁忌进食"
       },
       "descriptions": {
         "english": "Cherubs grant +[effect0.power][attack] to the eater and non-boss eaters gain [multistrike] [effect0.secondarypower].",
-        "chinese": ""
+        "chinese": "凯尔的小天使会使敌方单位获得 +[effect0.power][attack]，并且其中非首领单位再获得[multistrike] [effect0.secondarypower]。"
       },
       "icon": "@CaelForbiddenHarvestSinIcon",
       "icon_small": "@CaelForbiddenHarvestSinIconSmall",
@@ -23,11 +23,11 @@
       "type": "sin",
       "names": {
         "english": "Forbidden Harvest II",
-        "chinese": ""
+        "chinese": "禁忌进食 II"
       },
       "descriptions": {
         "english": "Cherubs grant +[effect0.power][attack] to the eater and non-boss eaters gain [multistrike] [effect0.secondarypower].",
-        "chinese": ""
+        "chinese": "凯尔的小天使会使敌方单位获得 +[effect0.power][attack]，并且其中非首领单位再获得[multistrike] [effect0.secondarypower]。"
       },
       "icon": "@CaelForbiddenHarvestSinIcon",
       "icon_small": "@CaelForbiddenHarvestSinIconSmall",

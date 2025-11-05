@@ -8,8 +8,9 @@
 
 ## 目前已做的形态
 
-我们目前做了 1 个新的首领形态：
+我们目前做了 2 个新的首领形态：
 * [阿尔基翁（灵魂粉碎者）](https://github.com/lostone-zc/MoreBosses-Reloaded-Chinese/wiki/Arkion-Soul-Crusher)
+* [凯尔（禁忌进食）](https://github.com/lostone-zc/MoreBosses-Reloaded-Chinese/wiki/Cael-Forbidden-Harvest)
 
 ## 实机截图
 

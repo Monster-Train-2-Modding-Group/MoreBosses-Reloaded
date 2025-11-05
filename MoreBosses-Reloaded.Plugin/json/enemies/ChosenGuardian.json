@@ -7,7 +7,7 @@
       "override": "replace",
       "names": {
         "english": "Chosen Guardian",
-        "chinese": ""
+        "chinese": "神选守卫"
       },
       "attack_damage": 6,
       "chosen_variant": true,
@@ -25,7 +25,7 @@
       },
       "descriptions": {
         "english": "Apply [corruption] [effect0.status0.power] to the damaged unit.",
-        "chinese": ""
+        "chinese": "对被攻击的单位施加[corruption] [effect0.status0.power]"
       },
       "effects": [
         "@HeavyT2_Corruptor_Chosen_MoreCorruption"

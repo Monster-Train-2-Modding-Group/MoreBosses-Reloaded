@@ -6,7 +6,8 @@
       "override": "replace",
       "clone_id": "Boss_Level6_FeedAtkHP",
       "names": {
-        "english": "Forbidden Cherub"
+        "english": "Forbidden Cherub",
+        "chinese": "禁忌小天使"
       },
       "can_attack": true,
       "attack_damage": 5,

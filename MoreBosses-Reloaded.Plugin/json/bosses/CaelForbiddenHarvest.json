@@ -15,7 +15,7 @@
       "trigger": "post_combat",
       "descriptions": {
         "english": "Apply <b>Buffet</b> [effect0.upgrade.status0.power], [multistrike] [effect0.upgrade.status1.power], and fully heal all <b>Cherubs</b>.<br>Apply [rage] [effect3.upgrade.status0.power] to enemy units, if there are no <b>Cherubs</b> in the room.",
-        "chinese": ""
+        "chinese": "施加<b>自助餐</b> [effect0.upgrade.status0.power] 和[multistrike] [effect0.upgrade.status1.power]，恢复所有<b>小天使</b>的所有生命值。<br>如果本层没有<b>小天使</b>，则对所有敌方单位施加[rage] [effect3.upgrade.status0.power]。"
       },
       "remove_on_relentless_change": true,
       "effects": [
