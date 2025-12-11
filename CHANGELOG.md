@@ -1,3 +1,6 @@
+## v0.2.3
+- Chinese translation of Cael Scenario, by lostone
+
 ## v0.2.1
 - Fix typo
 
