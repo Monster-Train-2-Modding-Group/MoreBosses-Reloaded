@@ -64,7 +64,7 @@
       "trigger": "on_eaten",
       "descriptions": {
         "english": "Grant +[effect0.upgrade.bonusdamage][attack] to the eater.[halfbreak]A non-boss eater also gains [multistrike] [effect1.upgrade.status0.power].[halfbreak]Deal [effect2.power] damage to self.",
-        "chinese": ""
+        "chinese": "使它的吞食者获得 +[effect0.upgrade.bonusdamage][attack]，如果是非首领单位，额外再获得[multistrike] [effect1.upgrade.status0.power]。[halfbreak]对自身造成 [effect2.power] 点伤害。"
       },
       "effects": [
         "@ForbiddenCherubEaterGainsUpgradeI",
@@ -77,7 +77,7 @@
       "trigger": "on_eaten",
       "descriptions": {
         "english": "Grant +[effect0.upgrade.bonusdamage][attack] to the eater.[halfbreak]A non-boss eater also gains [multistrike] [effect1.upgrade.status0.power].[halfbreak]Deal [effect2.power] damage to self.",
-        "chinese": ""
+        "chinese": "使它的吞食者获得 +[effect0.upgrade.bonusdamage][attack]，如果是非首领单位，额外再获得[multistrike] [effect1.upgrade.status0.power]。[halfbreak]对自身造成 [effect2.power] 点伤害。"
       },
       "effects": [
         "@ForbiddenCherubEaterGainsUpgradeII",

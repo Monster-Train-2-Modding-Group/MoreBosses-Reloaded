@@ -99,7 +99,7 @@ namespace MoreBossesReloaded.Plugin
                 new ConfigDescriptionBuilder
                 {
                     English = "Enable Cael Forbidden Harvest Scenario (Cherubs: Grant Multistrike 1).",
-                    Chinese = "",
+                    Chinese = "启用凯尔的禁忌进食形态（提供多重攻击的小天使）。",
                 }.ToString());
         }
 
