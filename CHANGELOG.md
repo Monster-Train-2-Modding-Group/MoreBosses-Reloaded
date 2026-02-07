@@ -1,3 +1,6 @@
+## v0.3.0
+- Recompile against Railforged
+
 ## v0.2.3
 - Chinese translation of Cael Scenario, by lostone
 

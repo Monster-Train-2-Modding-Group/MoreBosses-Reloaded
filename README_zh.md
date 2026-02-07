@@ -1,5 +1,10 @@
 # 更多首领形态
 
+[![GitHub Release](https://img.shields.io/github/v/release/Monster-Train-2-Modding-Group/MoreBosses-Reloaded?color=4CAF50&label=latest)](https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/releases)
+[![Trainworks Reloaded](https://img.shields.io/badge/framework-Trainworks--Reloaded-blue?logo=github)](https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded)
+[![License](https://img.shields.io/github/license/Monster-Train-2-Modding-Group/MoreBosses-Reloaded?color=lightgrey)](https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/blob/main/LICENSE)
+[![Donate](https://img.shields.io/badge/Ko--Fi-brandonandzeus-F16061?color=F16061&logo=ko-fi&style=flat&labelColor=?color=4E4E4E&logoColor=FFFFFF)](https://ko-fi.com/brandonandzeus)
+
 支持的语言: [English](https://github.com/Monster-Train-2-Modding-Group/MoreBosses-Reloaded/blob/main/README.md) | 简体中文
 
 本模组为《怪物火车 2》增添了一些飞行首领的新形态。
